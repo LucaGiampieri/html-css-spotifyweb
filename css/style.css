@@ -35,6 +35,7 @@ img {
 .main-section {
     width: calc(100vw - 250px);
     overflow: auto;
+    background-color: #141922;
 
 }
 
@@ -45,7 +46,7 @@ img {
     position: sticky;
     top: 0;
     z-index: 3;
-    background-color: rgba(8, 11, 18, 0.9);
+    background-color: rgba(8, 11, 18, 0.5);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -70,7 +71,6 @@ img {
 
 .main-structur {
     color: white;
-    background-color: #141922;
     padding: 20px;
 }
 
@@ -116,7 +116,7 @@ img {
 /* Main Recently Playlist */
 
 .main-section-title {
-    padding: 20px 0;
+    padding-top: 3rem;
     font-size: 2rem;
     font-weight: bold;
 }
@@ -124,6 +124,7 @@ img {
 .recently-played-container {
     display: flex;
     justify-content: space-between;
+    padding-top: 2rem;
 }
 
 .recently-played-card {
@@ -152,23 +153,38 @@ img {
 
 .recently-played-card-image-icon {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    inset: 0;
     display: none;
     font-size: 4rem;
     background-color: rgba(0, 0, 0, 0.5);
-    height: 100%;
-    width: 100%;
+
 }
-    
 
 .recently-played-card-image:hover .recently-played-card-image-icon {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.recently-played-card-image:hover .overlay {
-    display: block;
+/*Main Section Subtitle */
+
+.main-section-subtitle {
+    font-size: 0.9rem;
+    color: gray;
+    padding-top: 1rem;
+}
+
+/* John Foe Cards */
+
+.flex-start {
+    justify-content: flex-start;
+    gap: 2%;
+}
+
+/* Popoular Cards */
+
+.border-radius {
+    border-radius: 50%;
 }
 
 
