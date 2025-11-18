@@ -8,6 +8,10 @@
 
 /* Generics */
 
+body {
+    font-family: "Montserrat";
+}
+
 a {
     text-decoration: none;
 }
@@ -17,16 +21,12 @@ li {
     list-style-type: none;
 }
 
-/* DEBUG */
+
+/* Main Container */
 
 .main-container {
     display: flex;
     height: calc(100vh - 150px);
-}
-
-.playlist-navbar {
-    width: 200px;
-    background-color: aquamarine;
 }
 
 .main-section {
@@ -35,20 +35,103 @@ li {
 
 }
 
+/* Main Header */
+
 .main-header {
     height: 100px;
     position: sticky;
     top: 0;
     z-index: 3;
-    background-color: blue;
+    background-color: rgba(8, 11, 18, 0.9);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.main-structur {
-    background-color: beige;
-    overflow: auto;
+.button {
+    font-weight: bold;
+    padding: 10px 30px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    margin-right: 20px;
 }
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+/* Main Section */
+
+.main-structur {
+    color: white;
+    background-color: #141922;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.main-nav-list {
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav-list-text {
+    color: gray;
+    font-weight: bold;
+    font-size: 0.8rem;
+    transition: trasform 0.3s;
+}
+
+.border-bottom {
+    position: relative;
+}
+
+.border-bottom::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    background-color: #adff2f;
+    left: 30px;
+    top: 20px;
+}
+
+.main-nav-list-text:hover {
+    color: white;
+}
+
+/* DEBUG */
+
+
+
+
+
+
+
+
+
+
+
+
+.playlist-navbar {
+    width: 200px;
+    background-color: #000000;
+}
+
+
+
+
+
+
 
 .reproduction-nav {
     height: 150px;
-    background-color: black;
+    background-color: #282828;
 }
