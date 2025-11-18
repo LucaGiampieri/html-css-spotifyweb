@@ -21,6 +21,9 @@ li {
     list-style-type: none;
 }
 
+img {
+    max-width: 100%;
+}
 
 /* Main Container */
 
@@ -30,7 +33,7 @@ li {
 }
 
 .main-section {
-    width: calc(100vw - 200px);
+    width: calc(100vw - 250px);
     overflow: auto;
 
 }
@@ -68,13 +71,16 @@ li {
 .main-structur {
     color: white;
     background-color: #141922;
+    padding: 20px;
 }
+
+/* Main Navbar */
 
 .main-nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+
 }
 
 .main-nav-list {
@@ -107,29 +113,72 @@ li {
     color: white;
 }
 
-/* DEBUG */
+/* Main Recently Playlist */
 
+.main-section-title {
+    padding: 20px 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
 
+.recently-played-container {
+    display: flex;
+    justify-content: space-between;
+}
 
+.recently-played-card {
+    flex-basis: 15%;
+}
 
+.recently-played-card-title {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
 
+.recently-played-card-text {
+    text-align: center;
+    font-size: 0.8rem;
+    color: gray;
+    cursor: pointer;
+}
 
+.recently-played-card-image {
+    position: relative;
+    cursor: pointer;
+}
 
+.recently-played-card-image-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    font-size: 4rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+}
+    
 
+.recently-played-card-image:hover .recently-played-card-image-icon {
+    display: block;
+}
 
-
-
-
-.playlist-navbar {
-    width: 200px;
-    background-color: #000000;
+.recently-played-card-image:hover .overlay {
+    display: block;
 }
 
 
+/* DEBUG */
 
 
-
-
+.playlist-navbar {
+    width: 250px;
+    background-color: #000000;
+}
 
 .reproduction-nav {
     height: 150px;
