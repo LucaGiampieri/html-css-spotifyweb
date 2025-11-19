@@ -212,6 +212,7 @@ img {
 .reproduction-nav-left {
     display: flex;
     gap: 3rem;
+    justify-content: flex-start;
     flex-basis: 20%;
 }
 
@@ -226,14 +227,13 @@ img {
 /* Reproduction Nav Left Image */
 
 .reproduction-nav-left-img {
-    flex-basis: 35%;
     max-height: 80%;
 }
 
 /* Reproduction Nav Left Text */
 
 .reproduction-nav-left-name {
-    flex-basis: 65%;
+    flex-basis: 60%;
 }
 
 .reproduction-nav-title {
@@ -346,6 +346,7 @@ img {
 .reproduction-nav-right {
     flex-basis: 20%;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     gap: 1rem;
 }
@@ -386,6 +387,8 @@ img {
 .playlist-navbar {
     width: 300px;
     background-color: #000000;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Playlist Navbar Logo */
@@ -399,7 +402,7 @@ img {
 /* Playlist Navbar Options */
 
 .playlist-navbar-options {
-    padding: 2rem;
+    padding: 1rem 2rem;
 }
 
 .playlist-navbar-options-list-single {
@@ -439,8 +442,108 @@ img {
     content: "";
     position: absolute;
     width: 3px;
-    height: 25%;
+    height: 26%;
     background-color: #adff2f;
     left: 0;
-    top: 1.7rem;
+    top: 0.9rem;
+}
+
+/* Playlist Navbar List */
+
+.playlist-navbar-list {
+    padding-top: 1rem;
+}
+
+.playlist-navbar-list-title {
+    color: white;
+    padding-left: 2rem;
+}
+
+.playlist-navbar-list-add {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+    
+}
+
+.playlist-navbar-list-add-icon {
+    color: gray;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.playlist-navbar-list-add-text {
+    color: gray;
+}
+
+.playlist-navbar-list-add-icon:hover,
+.playlist-navbar-list-add-icon:hover~.playlist-navbar-list-add-text {
+    color: white;
+}
+
+.playlist-navbar-list-container {
+    padding-left: 2rem;
+    flex-grow: 1;
+    overflow: auto;
+
+}
+
+.playlist-navbar-list-container-text {
+    margin-bottom: 1rem;
+}
+
+.playlist-navbar-list-text {
+    color: gray;
+}
+
+/* Playlist Navbar Install */
+
+.playlist-navbar-install-container {
+    display: flex;
+    align-items: center;
+    padding: 0rem 2rem;
+    gap: 2%;
+}
+
+.playlist-navbar-install-img {
+    width: 8%;
+    cursor: pointer;
+}
+
+.playlist-navbar-install-text {
+    color: gray;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+/* Playlist Navbar User  */
+
+.playlist-navbar-user-container {
+    padding: 1rem 2rem;
+    position: sticky;
+    bottom: 0;
+    z-index: 2;
+}
+
+.playlist-navbar-user-image {
+    width: 10%;
+    color: white;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.playlist-navbar-user-text {
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.border-top {
+    border-top: 1px solid white;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    padding-top: 1rem;
+
 }
