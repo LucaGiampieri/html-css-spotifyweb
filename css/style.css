@@ -25,6 +25,14 @@ img {
     max-width: 100%;
 }
 
+.scale-hover:hover {
+    transform: scale(1.1);
+}
+
+.color-white-hover:hover {
+    color: white;
+}
+
 /* Main Container */
 
 .main-container {
@@ -36,7 +44,6 @@ img {
     width: calc(100vw - 250px);
     overflow: auto;
     background-color: #141922;
-
 }
 
 /* Main Header */
@@ -63,9 +70,6 @@ img {
     margin-right: 20px;
 }
 
-.button:hover {
-    transform: scale(1.1);
-}
 
 /* Main Section */
 
@@ -109,9 +113,6 @@ img {
     top: 20px;
 }
 
-.main-nav-list-text:hover {
-    color: white;
-}
 
 /* Main Recently Playlist */
 
@@ -187,6 +188,91 @@ img {
     border-radius: 50%;
 }
 
+/* Reproduction Navbar */
+
+.reproduction-nav {
+    height: 150px;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    color: white;
+}
+
+/* Reproduction Nav Left */
+
+.reproduction-nav-left {
+    display: flex;
+    gap: 3rem;
+}
+
+/* Reproduction Nav Left Image and Text Container */
+
+.reproduction-nav-left-container{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+/* Reproduction Nav Left Image */
+
+.reproduction-nav-left-img {
+    flex-basis: 40%;
+    max-height: 80%;
+}
+
+/* Reproduction Nav Left Text */
+
+.reproduction-nav-left-name {
+    flex-basis: 60%;
+}
+
+.reproduction-nav-title {
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.reproduction-nav-text {
+    color: gray;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Reproduction Nav Left Icons */
+
+.reproduction-nav-left-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+   
+.reproduction-nav-text-icon {
+    font-size: 1.3rem;
+    color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* DEBUG */
 
@@ -194,9 +280,4 @@ img {
 .playlist-navbar {
     width: 250px;
     background-color: #000000;
-}
-
-.reproduction-nav {
-    height: 150px;
-    background-color: #282828;
 }
