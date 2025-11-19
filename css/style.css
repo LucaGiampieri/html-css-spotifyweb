@@ -41,6 +41,19 @@ img {
     background-color: #adff2f;
 }
 
+.fill-white-hover:hover {
+    fill: white;
+}
+
+.fill-gray {
+    fill: gray;
+}
+
+.color-fill-white-hover:hover .color-white-hover {
+    fill: white;
+    color: white;
+}
+
 /* Main Container */
 
 .main-container {
@@ -60,7 +73,7 @@ img {
     height: 100px;
     position: sticky;
     top: 0;
-    z-index: 3;
+    z-index: 2;
     background-color: rgba(8, 11, 18, 0.5);
     display: flex;
     justify-content: flex-end;
@@ -92,7 +105,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .main-nav-list {
@@ -205,6 +217,9 @@ img {
     justify-content: space-between;
     padding: 1rem;
     color: white;
+    position: sticky;
+    bottom: 0;
+    z-index: 2;
 }
 
 /* Reproduction Nav Left */
@@ -418,6 +433,7 @@ img {
     color: #adff2f;
 }
 
+
 .playlist-navbar-options-list-text {
     color: gray;
     font-size: 0.9rem;
@@ -463,7 +479,7 @@ img {
     display: flex;
     align-items: center;
     padding: 0.5rem 1.5rem;
-    
+
 }
 
 .playlist-navbar-list-add-icon {
@@ -489,11 +505,12 @@ img {
 }
 
 .playlist-navbar-list-container-text {
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 .playlist-navbar-list-text {
     color: gray;
+    font-size: 0.8rem;
 }
 
 /* Playlist Navbar Install */
@@ -501,12 +518,13 @@ img {
 .playlist-navbar-install-container {
     display: flex;
     align-items: center;
-    padding: 0rem 2rem;
+    padding: 1rem 2rem;
     gap: 2%;
 }
 
 .playlist-navbar-install-img {
-    width: 8%;
+    width: 1rem;
+    height: 1rem;
     cursor: pointer;
 }
 
@@ -519,14 +537,14 @@ img {
 /* Playlist Navbar User  */
 
 .playlist-navbar-user-container {
-    padding: 1rem 2rem;
-    position: sticky;
-    bottom: 0;
+    padding: 0rem 2rem;
+    margin-bottom: 1rem;
     z-index: 2;
 }
 
 .playlist-navbar-user-image {
-    width: 10%;
+    width: 2rem;
+    height: 2rem;
     color: white;
     background-color: gray;
     border-radius: 50%;
@@ -537,6 +555,7 @@ img {
     color: white;
     font-size: 1rem;
     cursor: pointer;
+
 }
 
 .border-top {
