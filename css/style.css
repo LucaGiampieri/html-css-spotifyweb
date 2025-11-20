@@ -84,6 +84,10 @@ img {
     padding-right: 5rem;
 }
 
+.playlist-navbar-logo-small {
+    display: none;
+}
+
 /* Playlist Navbar Options */
 
 .playlist-navbar-options {
@@ -182,10 +186,15 @@ img {
 /* Playlist Navbar Install */
 
 .playlist-navbar-install-container {
+    padding: 1rem 2rem;
+}
+
+.playlist-navbar-install-container-relative {
     display: flex;
     align-items: center;
-    padding: 1rem 2rem;
     gap: 2%;
+    position: relative;
+    right: 2px;
 }
 
 .playlist-navbar-install-img {
@@ -546,12 +555,12 @@ img {
 .reproduction-nav-right {
     flex-basis: 30%;
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-items: center;
     gap: 1rem;
 }
 
-.reproduction-nav-right-incos{
+.reproduction-nav-right-incos {
     display: flex;
     gap: 1rem;
 }

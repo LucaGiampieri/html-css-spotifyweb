@@ -1,44 +1,112 @@
 /* Tablet */
 
 @media screen and (max-width:878px) {
-    
-.main-nav-list {
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-.main-nav-list-text{
-    flex-basis: 20%;
-}
+    .main-nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-.recently-played-container{
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 0.9rem;
-}
+    .main-nav-list-text {
+        flex-basis: 20%;
+    }
 
-.recently-played-card{
-    flex-basis: 23%;
-}
+    .recently-played-container {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 0.9rem;
+    }
 
-.reproduction-nav-center-bottom{
-    gap: 0.5rem;
-}
+    .recently-played-card {
+        flex-basis: 23%;
+    }
+
+    .reproduction-nav-center-bottom {
+        gap: 0.5rem;
+    }
 
 }
 
 /* Small Tablet */
 
-@media screen and (max-width:639px){
+@media screen and (max-width:639px) {
 
-.recently-played-card{
-    flex-basis: 40%;
+    .recently-played-card {
+        flex-basis: 47%;
+    }
+
+    .reproduction-nav-left-icons {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1px;
+    }
+
 }
 
-.reproduction-nav-left-icons{
-    flex-direction: column;
-    justify-content: center;
-    gap: 1px;
-}
+/* Big Smartphone */
 
-} 
+@media screen and (max-width:552px) {
+
+    .main-section {
+        width: calc(100vw - 50px);
+    }
+
+    .playlist-navbar {
+        width: 50px;
+    }
+
+    .playlist-navbar {
+        padding: 0.5rem;
+    }
+
+    .playlist-navbar-logo-small {
+        display: block;
+    }
+
+    .recently-played-logo,
+    .playlist-navbar-options-list-text,
+    .playlist-navbar-list,
+    .playlist-navbar-list-container-text,
+    .playlist-navbar-install-text,
+    .playlist-navbar-user-text {
+        display: none;
+    }
+
+    .border-left::after {
+        background-color: black;
+    }
+
+    .border-top {
+        border: none;
+    }
+
+    .playlist-navbar-options {
+        padding: 1rem 0;
+    }
+
+    .playlist-navbar-options-list-img {
+        width: 100%;
+    }
+
+    .playlist-navbar-install-container {
+        padding: 0;
+    }
+
+    .playlist-navbar-install-container-relative {
+        justify-content: center;
+    }
+
+    .playlist-navbar-install-img {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .playlist-navbar-user-container {
+        padding: 0;
+    }
+
+    .playlist-navbar-user-image {
+        width: 100%;
+    }
+
+}
