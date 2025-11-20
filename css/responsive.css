@@ -21,4 +21,24 @@
     flex-basis: 23%;
 }
 
+.reproduction-nav-center-bottom{
+    gap: 0.5rem;
 }
+
+}
+
+/* Small Tablet */
+
+@media screen and (max-width:639px){
+
+.recently-played-card{
+    flex-basis: 40%;
+}
+
+.reproduction-nav-left-icons{
+    flex-direction: column;
+    justify-content: center;
+    gap: 1px;
+}
+
+} 

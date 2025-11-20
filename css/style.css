@@ -274,7 +274,7 @@ img {
 
 .main-nav-list {
     display: flex;
-    gap: 20px;
+    gap: 1rem;
 }
 
 .main-nav-list-text {
@@ -412,7 +412,7 @@ img {
     display: flex;
     gap: 4rem;
     justify-content: flex-start;
-    flex-basis: 20%;
+    flex-basis: 30%;
 }
 
 /* Reproduction Nav Left Image and Text Container */
@@ -465,7 +465,7 @@ img {
 /* Reproduction Nav Center */
 
 .reproduction-nav-center {
-    flex-basis: 40%;
+    flex-basis: 30%;
 }
 
 /* Reproduction Nav Center Top */
@@ -544,15 +544,20 @@ img {
 /* Reproduction Nav Right  */
 
 .reproduction-nav-right {
-    flex-basis: 20%;
+    flex-basis: 30%;
     display: flex;
-    justify-content: flex-end;
+    justify-content:flex-end;
     align-items: center;
     gap: 1rem;
 }
 
+.reproduction-nav-right-incos{
+    display: flex;
+    gap: 1rem;
+}
+
 .reproduction-nav-right-line {
-    flex-basis: 60%;
+    flex-basis: 30%;
     border-radius: 20px;
     background-color: grey;
     height: 0.3rem;
