@@ -318,19 +318,17 @@ img {
 
 .recently-played-container {
     display: flex;
-    justify-content: space-between;
     padding-top: 2rem;
+    gap: 10px;
 }
 
 .recently-played-card {
-    flex-basis: 15%;
+    width: calc(100% / 6 - 20px / 6);
 }
 
 .recently-played-card-title {
     text-align: center;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 10px;
+    font-size: 0.8rem;
     cursor: pointer;
 }
 
@@ -345,22 +343,6 @@ img {
     position: relative;
     cursor: pointer;
 }
-
-/*
-.recently-played-card-image-icon {
-    position: absolute;
-    inset: 0;
-    display: none;
-    font-size: 4rem;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.recently-played-card-image:hover .recently-played-card-image-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-*/
 
 .recently-played-card-image-icon {
     position: absolute;
