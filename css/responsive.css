@@ -1,0 +1,24 @@
+/* Tablet */
+
+@media screen and (max-width:878px) {
+    
+.main-nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-nav-list-text{
+    flex-basis: 20%;
+}
+
+.recently-played-container{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.9rem;
+}
+
+.recently-played-card{
+    flex-basis: 23%;
+}
+
+}
